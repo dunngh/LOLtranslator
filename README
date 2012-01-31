@@ -1,5 +1,3 @@
-<<<<<<< HEAD
 This is a program to take a .lol file of LOLCODE source and translate it into an output file of C++ code and compile it.
-=======
-Translate LOLCODE into C++. It can be done
->>>>>>> Update README
+
+Project by Dunngh and FlukiestEmperor
