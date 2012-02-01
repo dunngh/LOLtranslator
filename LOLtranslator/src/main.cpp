@@ -2,6 +2,14 @@
 // LOLCODE translator
 // main.cpp
 
+#ifdef __APPLE__
+
+void compile()
+{
+  system("g++ LOLCODE.cpp -o LOL_OUTPUT");
+}
+
+#endif
 
 #include <iostream>
 #include <fstream>
@@ -36,10 +44,9 @@ int main ()
   fout.close();
   fin.close();
   
-  system("g++ LOLCODE.cpp -o LOL_OUTPUT");
-  
-  
-  //test THIS IS A ATE+TN{JOPIHVfeqpouhagre[iha
+  #if __APPLE__
+    compile();
+  #endif
 
   return 0;
 }
