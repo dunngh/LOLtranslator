@@ -36,10 +36,9 @@ int main ()
   fout.close();
   fin.close();
   
-  system("g++ LOLCODE.cpp -o LOL_OUTPUT");
-  
-  
-  //this is an update
+  #if __APPLE__
+    system("g++ main.cpp functions.cpp -o LOLtranslator");
+  #endif
 
   return 0;
 }
