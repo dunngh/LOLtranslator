@@ -2,14 +2,7 @@
 // LOLCODE translator
 // main.cpp
 
-#ifdef __APPLE__
 
-void compile()
-{
-  system("g++ LOLCODE.cpp -o LOL_OUTPUT");
-}
-
-#endif
 
 #include <iostream>
 #include <fstream>
@@ -45,7 +38,7 @@ int main ()
   fin.close();
   
   #if __APPLE__
-    compile();
+    system("g++ main.cpp functions.cpp -o LOLtranslator");
   #endif
 
   return 0;
