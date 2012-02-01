@@ -17,7 +17,6 @@ void getWordAndPick(ifstream & fin, ofstream & fout, const string & indexWord);
 
 void startBlock(ifstream & fin, ofstream & fout);
 
-//NEEDS WORK
 void output(ifstream & fin, ofstream & fout);
 
 //NEEDS WORK
