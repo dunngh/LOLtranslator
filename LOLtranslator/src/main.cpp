@@ -39,7 +39,7 @@ int main ()
   system("g++ LOLCODE.cpp -o LOL_OUTPUT");
   
   
-  //test THIS IS A ATE+TN{JOPIHVfeqpouhagre[iha
+
 
   return 0;
 }
