@@ -1,3 +1,5 @@
 This is a program to take a .lol file of LOLCODE source and translate it into an output file of C++ code and compile it.
 
+This is only the beginning. Some keywords do not follow spec. Most keywords have not been programmed yet.
+
 Project by Dunngh and FlukiestEmperor

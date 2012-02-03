@@ -31,4 +31,6 @@ void endCodeBlock(ifstream & fin, ofstream & fout);
 void increment(ifstream & fin, ofstream & fout);
 
 string readBetweenQuotes(ifstream & fin, ofstream & fout);
+
+void readin(ifstream & fin, ofstream & fout);
 #endif

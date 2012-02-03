@@ -55,7 +55,7 @@ void getWordAndPick(ifstream & fin, ofstream & fout, const string & indexWord)
   }
   else if (indexWord == "GIMMEH")
   {
-    //cin
+    readin(fin, fout);
   }
   
   
@@ -252,4 +252,9 @@ void increment(ifstream & fin, ofstream & fout)
   }
 }
 
+//CHANGE LATER TO USE REAL VARIABLES
+void readin(ifstream & fin, ofstream & fout)
+{
+  fout<< "cin >> var;" << endl;
+}
 
