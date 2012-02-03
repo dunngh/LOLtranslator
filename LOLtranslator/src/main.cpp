@@ -37,7 +37,7 @@ int main ()
   fin.close();
   
   #if __APPLE__
-    system("g++ main.cpp functions.cpp -o LOLtranslator");
+    system("g++ LOLCODE.cpp -o LOLtranslator");
   #endif
 
   return 0;
