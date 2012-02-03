@@ -9,7 +9,6 @@
 using namespace std;
 #include <iostream>
 
-
 //Pre: Stream must be opened before passed
 //Finds valid keywords from input source code file
 //  and returns an int to determine next action

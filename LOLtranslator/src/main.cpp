@@ -3,6 +3,7 @@
 // main.cpp
 
 
+
 #include <iostream>
 #include <fstream>
 #include "Header.h"
@@ -37,7 +38,11 @@ int main ()
   fin.close();
   
   #if __APPLE__
+<<<<<<< HEAD
     system("g++ LOLCODE.cpp -o LOLtranslator");
+=======
+    system("g++ main.cpp functions.cpp -o LOLtranslator");
+>>>>>>> master
   #endif
 
   return 0;
