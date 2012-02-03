@@ -37,11 +37,22 @@ int main ()
   fout.close();
   fin.close();
   
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  #if __APPLE__ 
+    system("g++ main.cpp functions.cpp -o LOLtranslator");
+=======
+>>>>>>> master
   #if __APPLE__
 <<<<<<< HEAD
     system("g++ LOLCODE.cpp -o LOLtranslator");
 =======
     system("g++ main.cpp functions.cpp -o LOLtranslator");
+>>>>>>> master
+<<<<<<< HEAD
+=======
+>>>>>>> local
 >>>>>>> master
   #endif
 
