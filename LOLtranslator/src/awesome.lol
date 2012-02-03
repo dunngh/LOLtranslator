@@ -1,0 +1,7 @@
+HAI
+CAN HAZ STDIO?
+I HAZ A VAR ITZ 12
+  VISIBLE "This program is written in LOLCODE"
+  UPZ VAR !! 3
+  VISIBLE "VAR IZ " + VAR
+KTHXBYE
