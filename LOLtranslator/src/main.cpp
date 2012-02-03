@@ -37,17 +37,11 @@ int main ()
   fout.close();
   fin.close();
   
-<<<<<<< HEAD
+
   #if __APPLE__ 
-    system("g++ main.cpp functions.cpp -o LOLtranslator");
-=======
-  #if __APPLE__
-<<<<<<< HEAD
+
     system("g++ LOLCODE.cpp -o LOLtranslator");
-=======
-    system("g++ main.cpp functions.cpp -o LOLtranslator");
->>>>>>> master
->>>>>>> local
+
   #endif
 
   return 0;
