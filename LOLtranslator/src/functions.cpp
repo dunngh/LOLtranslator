@@ -2,13 +2,22 @@
 // functions.cpp
 // LOLCODE translator
 //
-// Created by Robert Dunn on 1/27/12.
+// Robert Dunn and Ben Finley
 
 
 #include <iostream>
 #include <fstream>
 #include "Header.h"
 using namespace std;
+
+//A NOTE ON CONSTANTS:
+// As you may have noticed, all of the keywords are hardcoded.
+// There is a very good reason for this seemingly bad code. It
+// has been suggested that the use of a const string array is in 
+// order, but I feel that this would make the code very difficult 
+// to read. Adding a constant for each word would be just plain 
+// stupid. Therefore, all keywords are hardcoded. 
+
 
 void getWordAndPick(ifstream & fin, ofstream & fout, const string & indexWord)
 {
@@ -49,13 +58,13 @@ void getWordAndPick(ifstream & fin, ofstream & fout, const string & indexWord)
   {
     //comparator
   }
-  else if (indexWord == "OBTW")
-  {
-    //comment block
-  }
   else if (indexWord == "GIMMEH")
   {
     readin(fin, fout);
+  }
+  else if (indexWord == "OBTW")
+  {
+    commentBlock(fin, fout);
   }
   
   
@@ -65,7 +74,7 @@ void startBlock(ifstream & fin, ofstream & fout)
 {
   string words;
   fin >> words;
-  if (words == "HAS")
+  if (words == "HAZ")
   {
     fin>> words;
     if (words == "STDIO?")
@@ -112,7 +121,7 @@ void output(ifstream & fin, ofstream & fout)
           }
         }
         break;
-      case '+':
+      case 'N':
         fout << " << ";
         break;
       case '\n':
@@ -256,5 +265,49 @@ void increment(ifstream & fin, ofstream & fout)
 void readin(ifstream & fin, ofstream & fout)
 {
   fout<< "cin >> var;" << endl;
+}
+
+void commentBlock(ifstream & fin, ofstream & fout)
+{
+  bool keepGoing = true;
+  char fromFile, check, check2, check3;
+  fout << "/*";
+  do
+  {
+    fin.get(fromFile);
+    if (fromFile == 'T')
+    {
+      fin.get(check);
+      if (check == 'L')
+      {
+        fin.get(check2);
+        if (check2 == 'D')
+        {
+          fin.get(check3);
+          if (check3 == 'R')
+          {
+            fout<< "*/" << endl;
+            keepGoing = false;
+          }
+          else
+          {
+            fout << fromFile << check << check2 << check3;
+          }
+        }
+        else
+        {
+          fout << fromFile << check << check2;
+        }
+      }
+      else
+      {
+        fout << fromFile << check;
+      }
+    }
+    else
+    {
+      fout << fromFile;
+    }
+  }while(keepGoing);
 }
 

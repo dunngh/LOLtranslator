@@ -9,9 +9,6 @@
 using namespace std;
 #include <iostream>
 
-//Pre: Stream must be opened before passed
-//Finds valid keywords from input source code file
-//  and returns an int to determine next action
 void getWordAndPick(ifstream & fin, ofstream & fout, const string & indexWord);
 
 void startBlock(ifstream & fin, ofstream & fout);
@@ -33,4 +30,6 @@ void increment(ifstream & fin, ofstream & fout);
 string readBetweenQuotes(ifstream & fin, ofstream & fout);
 
 void readin(ifstream & fin, ofstream & fout);
+
+void commentBlock(ifstream & fin, ofstream & fout);
 #endif

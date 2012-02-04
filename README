@@ -2,4 +2,9 @@ This is a program to take a .lol file of LOLCODE source and translate it into an
 
 This is only the beginning. Some keywords do not follow spec. Most keywords have not been programmed yet.
 
+A note on variable declaration:
+  As of right now, all variables are to be called VAR and there will only be one variable 
+  allowed. This one variable will be a double float. This will change some tim in the
+  future to allow real variables of varying type and name.
+
 Project by Dunngh and FlukiestEmperor

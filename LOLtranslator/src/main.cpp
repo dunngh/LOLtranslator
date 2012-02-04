@@ -40,7 +40,7 @@ int main ()
 
   #if __APPLE__ 
 
-    system("g++ LOLCODE.cpp -o LOLtranslator");
+    system("g++ LOLCODE.cpp -o LOL_OUTPUT");
 
   #endif
 
